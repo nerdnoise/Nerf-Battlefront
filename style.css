@@ -93,7 +93,7 @@ body {
   }
 
 .button:hover:before, .button:hover:after {
-	background: black;
+	background: white;
 }
 
 .button:hover{
