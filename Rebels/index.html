@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"></style>
+    </head>
+    <body>
+        <p class="header">Take the objective!</p>
+        <p class="troops">Troops Remaining</p>
+        <p class="troops" id="counter"></p>
+        <a id="respawn" class="button" onclick="losePlayer()">Respawn</a>
+        
+        <script>
+            var playerCount = parseInt(prompt("Number of troops to start with", 30));
+            var counter = document.getElementById("counter");
+            var respawn = document.getElementById("respawn");
+            counter.innerText = playerCount + "";
+            document.body.onkeyup = function(e){
+                if(e.keyCode == 32){
+                    //your code
+                    respawn.click();
+                }
+            }
+            function losePlayer() {
+                playerCount--;
+                counter.innerText = playerCount + "";
+            }
+        </script>
+
+    </body>
+</html>
