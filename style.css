@@ -51,12 +51,12 @@ body {
       text-decoration:none;
       /* text-transform:uppercase; */
       margin:40px auto;
-      color: black;
+      color: white;
       cursor: pointer;
   }
 
 .button:before,.button:after {
-	border: 5px solid black;
+	border: 5px solid white;
 }
 
   .button:before{
@@ -84,8 +84,8 @@ body {
     z-index: -1;
     background: repeating-linear-gradient(
         0deg,
-    black,
-    black 5px,
+    white,
+    white 5px,
         transparent 5px,
         transparent 7px
     );
@@ -97,5 +97,5 @@ body {
 }
 
 .button:hover{
-	color:white;
+	color:black;
 }
